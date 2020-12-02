@@ -1,4 +1,4 @@
-input = open("/Users/krishjain/Downloads/AdventOfCode/input.txt").read().splitlines()
+input = open("Day 1/input.txt").read().splitlines()
 list2 = []
 
 for i in range(len(input)):

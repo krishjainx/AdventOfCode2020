@@ -1,6 +1,6 @@
 import re
 
-input = open("/Users/krishjain/Downloads/AdventOfCode/Day 2/input.txt").read().splitlines()
+input = open("Day 2/input.txt").read().splitlines()
 lower_bound = 0
 higher_bound = 0
 counter2 = 0
