@@ -17,6 +17,6 @@ for i in input:
         if splitLine.index(j) == 2:
             word_broken = list(splitLine[2])
             if (word_broken[position1 - 1] == splitLine[1]) ^ (word_broken[position2 - 1] == splitLine[1]):
-                correctCounter = correctCounter + 1
+                correctCounter += 1
 
 print(correctCounter)

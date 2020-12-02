@@ -16,7 +16,7 @@ for i in input:
 		if splitLine.index(j) == 2:
 			numberoftimes = splitLine[2].count(splitLine[1])
 			if (numberoftimes <= higher_bound) and (numberoftimes >= lower_bound):
-				counter2 = counter2 + 1
+				counter2 += 1
 
 print(counter2)
 	
