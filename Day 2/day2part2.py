@@ -14,7 +14,7 @@ for i in input:
         if splitLine.index(j) == 0:
             position1 = int(j.split("-")[0])
             position2 = int(j.split("-")[1])
-        if splitLine.index(j) == 2:
+        if splitLine.index(j) == 2 and (position1 <= len(j)) and (position2 <= len(j)):
             word_broken = list(splitLine[2])
             if (word_broken[position1 - 1] == splitLine[1]) ^ (word_broken[position2 - 1] == splitLine[1]):
                 correctCounter += 1

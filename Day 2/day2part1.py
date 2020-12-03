@@ -13,7 +13,7 @@ for i in input:
 		if splitLine.index(j) == 0:
 			lower_bound = int(j.split("-")[0])
 			higher_bound = int(j.split("-")[1])
-		if splitLine.index(j) == 2:
+		if (splitLine.index(j) == 2) and (lower_bound <= len(j)) and (higher_bound <= len(j)):
 			numberoftimes = splitLine[2].count(splitLine[1])
 			if (numberoftimes <= higher_bound) and (numberoftimes >= lower_bound):
 				counter2 += 1
