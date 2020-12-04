@@ -9,8 +9,16 @@ def day3part2(theInput):
                 continue
             if theInput[i][x] == '#':
                 total += 1
-            x = (x + xMovement) % len(theInput[0])
+            # x = (x + xMovement) % len(theInput[0]) OR 
+            x += xMovement
+            if x >= len(theInput[i]):
+                x = x - len(theInput[i])
+                
         return total     
     return path(1,1) * path(3,1) * path(5,1) * path(7,1) * path(1,2)
 
 print(day3part2(input))
+
+
+ 
+        
