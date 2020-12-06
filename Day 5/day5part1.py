@@ -1,5 +1,7 @@
 input = open("Day 5/input.txt").read().splitlines()
 #Part 1
+
+
 arrayOfSeatID = []
 last_amount_moved = 128
 for boardingPass in input:

@@ -1,4 +1,6 @@
 #Part 1
+
+
 input = open('Day 4/input.txt', "r").read()
 input = input.split("\n\n")
 
