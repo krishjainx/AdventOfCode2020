@@ -15,7 +15,7 @@ for i in input:
         'hcl',
         'ecl',
         'pid',
-        ]
+    ]
 
     arrayOfTheItems = []
 
@@ -23,9 +23,9 @@ for i in input:
         arrayOfTheItems.append(j.split(':')[0])
 
         doesHaveAllDetails = all(item in arrayOfTheItems for item in
-                             detailsNeeded)
+                                 detailsNeeded)
 
     if doesHaveAllDetails:
         validCounter = validCounter + 1
 
-print ("These are the number of valid ones: " + str(validCounter))
+print("These are the number of valid ones: " + str(validCounter))
