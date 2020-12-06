@@ -7,10 +7,9 @@ for i in range(len(input)):
 
 for i in list2:
     for j in list2:
-       if j == 2020 - i:
-           a = j
-           b = 2020 - j 
-           print(a*b)
-           
-    i = i + 1
+        if j == 2020 - i:
+            a = j
+            b = 2020 - j
+            print(a*b)
 
+    i = i + 1

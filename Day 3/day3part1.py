@@ -9,7 +9,7 @@ for i in input:
 
     if i[xPosition] == "#":
         encounteredTrees += 1
-    
+
     xPosition += 3
 
 
