@@ -5,7 +5,6 @@ lower_bound = 0
 higher_bound = 0
 counter2 = 0
 
-
 for i in input:
 	splitLine = re.split(' |: ', i)
 	
