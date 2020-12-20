@@ -12,6 +12,7 @@ https://adventofcode.com/2020
 | Day 4: Toboggan Trajectory | https://adventofcode.com/2020/day/4       |
 | Day 5: Binary Boarding.    | https://adventofcode.com/2020/day/5       |
 | Day 6: Custom Customs      | https://adventofcode.com/2020/day/6       |
+| Day 7: Handy Haversacks    | https://adventofcode.com/2020/day/7      |
 
 
 
