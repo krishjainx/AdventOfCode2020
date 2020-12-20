@@ -1,5 +1,3 @@
-import functools
-
 input = open(
     '/Users/krishjain/Desktop/AdventOfCode/Day 6/input.txt', "r").read()
 input = input.split("\n\n")
@@ -13,9 +11,7 @@ for i in input:
     if "" in x:
         x.remove("")
 
-    numberOfRepeatingChars = len(
-        functools.reduce(set.intersection, map(set, x)))
-
+    numberOfRepeatingChars = len(set.intersection(*[set(e) for e in x])) 
     countForEachGroup.append(numberOfRepeatingChars)
 
 
