@@ -1,7 +1,9 @@
 # AdventOfCode2020
-Advent Of Code Challenges (Python and Swift)
+Advent Of Code Challenges (Python and Swift). Just opensourcing some of my solutions for the starting days.
 
 https://adventofcode.com/2020
+
+
 
 
 |         Problem            |                 Link                      |

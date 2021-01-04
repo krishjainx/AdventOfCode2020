@@ -1,22 +1,28 @@
-from itertools import combinations
-import math
-import random
+def getValidContinuousSet(numbers, total):
+	for length in range(2, len(numbers)+1):
+		for offset in range(len(numbers)-length+1):
+			contiguous_set = numbers[offset:offset+length]
+			if sum(contiguous_set) == total:
+				return contiguous_set
 
-with open('Day 9/input.txt', 'r') as fd:
-    numbers = [int(line.rstrip()) for line in fd]
+with open("Day 9/input.txt", "r") as file:
+	numbers = list(map(int, file.read().split()))
 
-HowManyNumbersToIgnore = 25        # HowManyNumbersToIgnore
+lengthOfPreamble = 25
+for i in range(len(numbers) - lengthOfPreamble):
+	previous_numbers = numbers[i:i+lengthOfPreamble]
+	total = numbers[i+lengthOfPreamble]
+	total_valid = False
+	for num1 in previous_numbers:
+		for num2 in previous_numbers:
+			if num1 + num2 == total:
+				total_valid = True
+	if not total_valid:
+		invalid_total = total
 
-def check_number(pos):
-    global numbers
-    startpos = pos - HowManyNumbersToIgnore
-    combs = [lst for lst in combinations(numbers[startpos:pos], 2)]     
-    sums = [sum(i) for i in combs]
-    if numbers[pos] in sums:
-        check_number(pos + 1)
-    else:
-        print("Part 1: " + str(numbers[pos]) + " is the first number not equal to a sum")
-    return [numbers[pos], pos]
 
 
-FirstInvalidLst = check_number(HowManyNumbersToIgnore)
+
+print("Part 1")
+print(invalid_total)
+
