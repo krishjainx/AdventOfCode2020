@@ -1,4 +1,3 @@
-
 with open('Day 8/input.txt') as file:
     data = file.readlines()
     data = [line.strip() for line in data]
